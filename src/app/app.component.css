@@ -6,7 +6,34 @@
 
 table {
     width: 100%;
-    }
+    margin-bottom: 32px;
+}
+
+.mat-header-cell {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.mat-row {
+    line-height: 1.2em;
+}
+
+.mat-row:nth-child(2n-1) {
+    background-color: #525252;
+}
+
+.mat-cell {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.mat-column-department {
+    padding-right: 8px;
+}
+
+.mat-column-description {
+    padding-right: 8px;
+}
 
 .mat-column-datasets {
     text-align: right;
@@ -15,9 +42,15 @@ table {
 
 .content {
     display: flex;
-    margin: 82px auto 32px;
     padding: 0 16px;
-    max-width: 960px;
+    width: 960px;
+    max-width: 100vw;
     flex-direction: column;
     align-items: center;
+    }
+
+@media only screen and (max-width: 600px) {
+    .mat-header-cell {
+        font-size: 1em;
+        }
     }
